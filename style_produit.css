@@ -104,7 +104,7 @@ header nav ul li a {
     font-size: 1.1rem;
 }
 
-.product-card li a {
+.product-card button {
     background-color: #f76c6c;
     color: white;
     border: none;
