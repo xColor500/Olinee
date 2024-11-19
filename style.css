@@ -132,18 +132,3 @@ section button:hover {
 section button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.item {
-  flex: 1 1 100%;  /* Adapte l'élément à 100% sur mobile */
-}
-
-@media (min-width: 768px) {
-  .item {
-    flex: 1 1 45%;  /* Adapte l'élément à 45% sur tablettes et plus grands écrans */
-  }
-}
