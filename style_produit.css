@@ -75,21 +75,27 @@ header nav ul li a {
 }
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex; /* Utilisez Flexbox pour faciliter l'alignement */
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .product-card {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    justify-content: space-between; /* Pousse le bouton vers le bas */
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Taille uniforme */
+    height: 400px; /* Hauteur uniforme */
 }
 
 .product-card img {
-    width: 50%;
+    width: 100%;
     border-radius: 10px;
     max-width: 100%;
     height: auto;
@@ -113,6 +119,15 @@ header nav ul li a {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: auto; /* Aligne le bouton en bas */
+    transition: all 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #f0f0f0;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -122,31 +137,11 @@ footer {
     text-align: center;
 }
 
-.filter-btn {
-    background-color: #f76c6c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-.filter-select {
-    background-color: #f76c6c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
 div div button:hover {
     background-color: #f0f0f0; 
     color: black; 
     transform: scale(1.1); 
 }
-
-    
+   
 div div button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
