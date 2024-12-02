@@ -91,7 +91,9 @@ header nav ul li a {
 .product-card img {
     width: 50%;
     border-radius: 10px;
-    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
 }
 
 .product-card h3 {
